@@ -1,0 +1,75 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: silver;
+  padding: 20px;
+  background-color: #020202;
+  .logo {
+    color: red;
+    width: 100%;
+    font-weight: bold;
+    font-size: 30px;
+    transition: ease-in-out 0.7s;
+    cursor: pointer;
+
+    &:hover {
+      font-size: 33px;
+      transition: ease-in-out 0.7s;
+
+      span {
+        // opacity: 1;
+        // transition: ease-in-out 0.7s;
+        font-size: 33px;
+      }
+    }
+    span {
+      color: white;
+      // opacity: 0;
+      transition: ease-in-out 0.7s;
+      font-size: 30px;
+    }
+  }
+  .rightNav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: ease-in-out 0.5s;
+
+      &:hover {
+        color: red;
+        transition: ease-in-out 0.5s;
+        font-size: 24px;
+      }
+    }
+  }
+  .cv {
+    width: 20%;
+    border-radius: 20px;
+    padding: 12px;
+    background-color: #000;
+
+    border: 1px solid white;
+    // border: 0px;
+    color: white;
+    cursor: pointer;
+    transition: ease-in-out 0.7s;
+    font-weight: bold;
+
+    &:hover {
+      // font-size: 15px;
+      transition: ease-in-out 0.7s;
+      // background-color: #2f2f2f;
+      color: red;
+      border: 1px solid red;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}

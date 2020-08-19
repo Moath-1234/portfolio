@@ -6,30 +6,38 @@
   padding: 20px;
   background-color: #020202;
   .logo {
-    color: red;
     width: 100%;
-    font-weight: bold;
-    font-size: 30px;
-    transition: ease-in-out 0.7s;
-    cursor: pointer;
-
-    &:hover {
-      font-size: 33px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    .log {
+      display: flex;
+      margin-right: 20px;
+      color: red;
+      font-weight: bold;
+      font-size: 30px;
       transition: ease-in-out 0.7s;
+      cursor: pointer;
+      margin-left: 20px;
+      align-items: center;
+      img {
+        width: 70px;
+        padding: 10px;
+        background-color: rgb(10, 10, 10);
+        border-radius: 5px;
+      }
+      text-align: center;
+    }
 
+    .rightLogo {
       span {
-        // opacity: 1;
-        // transition: ease-in-out 0.7s;
-        font-size: 33px;
+        color: white;
+        transition: ease-in-out 0.7s;
+        font-size: 30px;
       }
     }
-    span {
-      color: white;
-      // opacity: 0;
-      transition: ease-in-out 0.7s;
-      font-size: 30px;
-    }
   }
+
   .rightNav {
     display: flex;
     justify-content: space-around;
